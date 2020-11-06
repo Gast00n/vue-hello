@@ -13,7 +13,8 @@ const app = new Vue ({
     data: {
         title: 'Benvenuti nel mondo di Vue!',
         img: 'https://www.fillmurray.com/400/300',
-        colorize: ''
+        colorize: '',
+        font: ''
 
     },
     methods: {
@@ -21,14 +22,18 @@ const app = new Vue ({
             let rand = Math.floor( Math.random() * 20) + 1
             if (rand < 5) {
                 this.colorize = 'tomato';
+                this.font = 'tomato';
             } else if (rand >= 5 && rand < 10) {
                 this.colorize = 'crimson';
+                this.font = 'crimson';
             } else if (rand >= 10 && rand < 15) {
                 this.colorize = 'dodgerblue';
+                this.font = 'dodgerblue';
             } else {
                 this.colorize = 'purple';
+                this.font = 'purple';
             }
-        return this.colorize;
+            return this.colorize, this.font;
         }
     }
 });

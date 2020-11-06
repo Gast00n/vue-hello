@@ -9,9 +9,11 @@
 <body>
     
     <div id="app">
-        <h1 :class="colorize">{{ title }}</h1>
+        <div :style="{color: font}">
+            <h1>{{ title }}</h1>
+        </div>
         <img :src="img" :alt="title">
-        <button @click="colorChange" class="btn">Cambia Random</button>
+        <button @click="colorChange" class="btn" :class=" colorize">Cambia Random</button>
     </div>
     
     
