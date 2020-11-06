@@ -5,9 +5,10 @@
     align-items: center;
 }
 
+
 .btn {
-    background: tomato;
-    color: white;
+    box-shadow: none;
+    border: 0;
     border-radius: 10px;
     padding: 10px 20px;
     margin-top: 20px;
@@ -17,16 +18,20 @@
 }
 
 .tomato {
-    color: tomato;
+    background: tomato;
+    color: #fff;
 }
 
 .crimson {
-    color: crimson;
+    background: crimson;
+    color: #fff;
 }
 
 .dodgerblue {
-    color: dodgerblue;
+    background: dodgerblue;
+    color: #fff;
 }
 .purple {
-    color: purple;
+    background: purple;
+    color: #fff;
 }
